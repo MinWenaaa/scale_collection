@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://cache.amap.com/lbs/static/addToolbar.js"></script>
+</head>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+crossorigin=""></script>
+
+<body>
+  
+
+
+  <div id="map"></div>
+
+  <div id="searchbox">
+
+    <div class="serach_container">
+      <input class="searchbox_input" type="text" name="word" autocomplete="off" maxlength="256" placeholder="搜索地点">
+      <div class="search_btn">搜索</div>
+    </div>
+    <div id="content_wrapper"></div>
+
+  </div>
+
+  <div class="confirm_btn">缩放：0</div>
+
+  <script src="https://webapi.amap.com/maps?v=1.4.15&key=a5dc5827f1205eeddf26bc62f529c2be"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+
+
+</html>
