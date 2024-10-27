@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/info.css">
+  <link rel="stylesheet" href="icon_font/iconfont.css">
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
@@ -18,21 +20,111 @@
   
 
 
-  <div id="map"></div>
+  <div id="map">
+
+    <div class="infobox_wrapper">
+
+      <h2>Information</h2>
+
+      <div class="info_item age">
+        <p class="info_name age">年龄：</p>
+        <div class="dropdown age">
+          <button class="dropbtn age">年龄
+            <span class="iconfont icon-xialajiantou"></span>
+          </button>
+          <ul class="drop_content age">
+            <li>6~12</li>
+            <li>13~18</li>
+            <li>18~35</li>
+            <li>36~60</li>
+            <li>60以上</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info_item profession">
+        <p class="info_name profession">行业：</p>
+        <div class="dropdown profession">
+          <button class="dropbtn profession">行业
+            <span class="iconfont icon-xialajiantou"></span>
+          </button>
+          <ul class="drop_content profession">
+            <li>学术与研究</li>
+            <li>商业与销售</li>
+            <li>旅游与酒店业</li>
+            <li>物流与运输</li>
+            <li>城市规划与建设</li>
+            <li>公共服务与非盈利组织</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info_item purpose">
+        <p class="info_name purpose">使用目的：</p>
+        <div class="dropdown purpose">
+          <button class="dropbtn purpose">使用目的
+            <span class="iconfont icon-xialajiantou"></span>
+          </button>
+          <ul class="drop_content purpose">
+            <li>交通与路径规划</li>
+            <li>地理位置搜索</li>
+            <li>城市与商业规划研究</li>
+            <li>地理学习研究</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info_item device">
+        <p class="info_name device">设备类型：</p>
+        <div class="dropdown device">
+          <button class="dropbtn device">设备类型
+            <span class="iconfont icon-xialajiantou"></span>
+          </button>
+          <ul class="drop_content device">
+            <li>手机</li>
+            <li>平板</li>
+            <li>笔记本</li>
+            <li>台式机</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info_item size">
+        <p class="info_name size">屏幕尺寸：</p>
+        <div class="dropdown size">
+          <button class="dropbtn size">屏幕尺寸
+            <span class="iconfont icon-xialajiantou"></span>
+          </button>
+          <ul class="drop_content size">
+          </ul>
+        </div>
+      </div>
+
+      <button class="info_confirm">确认
+          <span class="iconfont icon-youjiantou"></span>
+      </button>
+
+  </div>
+
+  </div>
+
+
+
 
   <div id="searchbox">
 
-    <div class="serach_container">
+    <div class="search_container">
       <input class="searchbox_input" type="text" name="word" autocomplete="off" maxlength="256" placeholder="搜索地点">
-      <div class="search_btn">随机</div>
+      <button class="search_btn">随机</button>
     </div>
     <div id="content_wrapper"></div>
 
   </div>
 
-  <div class="confirm_btn">缩放：0</div>
+  <div class="scale_btn">缩放：0</div>
 
-  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="js/info.js"></script>
+  <script type="text/javascript" src="js/map.js"></script>
 </body>
 
 

@@ -1,0 +1,126 @@
+.infobox_wrapper {
+    position: relative;
+    width: 520px;
+    height: 560px;
+    border: 2px solid rgba(255, 255, 255, .6);
+    border-radius: 20px;
+    backdrop-filter: blur(16px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 999;
+    animation: showup 0.2s ease;
+}
+
+@keyframes showup{
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
+    }
+}
+
+@keyframes shutdown{
+    from {
+        transform: scaleY(1);
+    }
+    to {
+        transform: scaleY(0);
+    }
+}
+
+.infobox_wrapper h2 {
+    font-size: 2.4em;
+    color: #635282;
+    margin: 0 0 24px 0;
+}
+
+.info_item {
+    display: flex;
+    width: 320px;
+    margin: 4px 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.info_item .info_name {
+    color: #27152b;
+    font-size: 16px;
+}
+
+.dropdown {
+    position: relative;
+    width: 200px;
+}
+
+.dropbtn {
+    position: relative;;
+    width: 100%;
+    height: 32px;
+    color: #635282;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid #635282;
+    border-radius: 4px;
+    z-index: 5;
+}
+
+.dropbtn .iconfont {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 25%;
+}
+
+.drop_content {
+    display: none;
+    height: 72px;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    list-style: none;
+    font-size: 12px;
+    color: #27152b;
+    border: 1px solid #27152b;
+    overflow-y: auto;
+    z-index: 6;
+}
+
+ul {
+    padding-inline-start: 0;
+    padding: 2px 0
+}
+
+.drop_content li {
+    padding: 0 6px;
+}
+.drop_content li:hover {
+    background-color: #635282;
+    color: #e9f0f6;
+}
+
+
+.info_confirm {
+    position: relative;
+    width: 120px;
+    height: 42px;
+    margin: 48px 0 0 0;
+    background-color:  #bcb5ad;
+    color: #f8f3ed;
+    font-size: 16px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.info_confirm .iconfont {
+    display: block;
+    position: absolute;
+    right: 18px;
+    top: 30%;
+}
+
