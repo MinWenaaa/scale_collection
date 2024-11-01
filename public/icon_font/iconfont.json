@@ -13,6 +13,20 @@
       "unicode_decimal": 983887
     },
     {
+      "icon_id": "5387549",
+      "name": "刷新",
+      "font_class": "shuaxin",
+      "unicode": "eafd",
+      "unicode_decimal": 60157
+    },
+    {
+      "icon_id": "14943135",
+      "name": "详情",
+      "font_class": "xiangqing",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
       "icon_id": "16161081",
       "name": "下拉箭头",
       "font_class": "xialajiantou",
