@@ -1,6 +1,6 @@
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1730443772950') format('truetype');
+  src: url('iconfont.ttf?t=1730526968302') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-tuding:before {
+  content: "\e64c";
+}
+
 .icon-youjiantou:before {
   content: "\f034f";
 }
@@ -19,8 +23,12 @@
   content: "\eafd";
 }
 
-.icon-xiangqing:before {
-  content: "\e611";
+.icon-xiangqingbeifen:before {
+  content: "\e614";
+}
+
+.icon-leibie:before {
+  content: "\e668";
 }
 
 .icon-xialajiantou:before {

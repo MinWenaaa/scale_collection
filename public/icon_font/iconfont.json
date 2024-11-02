@@ -6,6 +6,13 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "1172723",
+      "name": "图钉",
+      "font_class": "tuding",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
       "icon_id": "1718355",
       "name": "右箭头",
       "font_class": "youjiantou",
@@ -20,11 +27,18 @@
       "unicode_decimal": 60157
     },
     {
-      "icon_id": "14943135",
-      "name": "详情",
-      "font_class": "xiangqing",
-      "unicode": "e611",
-      "unicode_decimal": 58897
+      "icon_id": "11556689",
+      "name": "详情备份",
+      "font_class": "xiangqingbeifen",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "12331667",
+      "name": "类别",
+      "font_class": "leibie",
+      "unicode": "e668",
+      "unicode_decimal": 58984
     },
     {
       "icon_id": "16161081",

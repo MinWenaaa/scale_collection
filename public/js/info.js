@@ -75,11 +75,9 @@ device_content.addEventListener('click', (event) => {
 
 InfoConfirm.addEventListener('click', () => {
     var InfoWrapper = document.querySelector('.infobox_wrapper');
-    var searchWrapper = document.querySelector('#searchbox');
-    var scaleBtn = document.querySelector('.scale_btn');
+    var searchWrapper = document.querySelector('.searchbox');
 
-    scaleBtn.style.display='block';
-    searchWrapper.style.display='block'
+    searchWrapper.style.display='flex'
     InfoWrapper.style.display='none';
 
 })

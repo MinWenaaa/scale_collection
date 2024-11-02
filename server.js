@@ -51,11 +51,11 @@ app.get('/inputtips', (req, res) => {
 
   var keywords = req.query.keywords;
 
-  my_get('https://restapi.amap.com/v3/assistant/inputtips', {
+  my_get('https://restapi.amap.com/v3/place/text', {
     'key': key,
     'keywords': keywords,
   }, (json) => {
-      tips = json['tips'];
+      tips = json['pois'];
       res.json({
         'tips': tips
       })
@@ -65,10 +65,12 @@ app.get('/inputtips', (req, res) => {
 app.get('/around', (req, res) => {
 
   var location = req.query.location;
+  var code = req.query.code;
 
   my_get('https://restapi.amap.com/v5/place/around', {
     'key': key,
-    'location': location
+    'location': location,
+    'types': code,
   }, (json) => {
     tips = json['pois'];
     res.json({
